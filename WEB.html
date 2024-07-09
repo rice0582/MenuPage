@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .top-section {
+            background-image: url('http://surl.li/ovxgoj'); /* Use the provided background image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 250px 0;
+            position: relative;
+        }
+        .top-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .top-section h1 {
+            font-size: 3em;
+            margin: 0;
+            z-index: 1;
+            position: relative;
+        }
+        .top-section button {
+            background-color: #ffd700;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            z-index: 1;
+            position: relative;
+        }
+        .favorites-section {
+            background-color: #ffffe0;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .favorites-section h2 {
+            margin: 0 0 30px;
+            font-size: 2em;
+            color: #333;
+        }
+        .favorites-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .favorite-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%; /* Adjust width for 3 items per line */
+            max-width: 300px; /* Optional: Set a max-width */
+            min-width: 200px; /* Optional: Set a min-width */
+            margin: 20px 10px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .favorite-item img {
+            width: 125px;
+            height: 125px;
+            display: block;
+            margin: 10px auto;
+            object-fit: cover;
+        }
+        .favorite-item h3 {
+            width: 90%;
+            font-size: 1.2em;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .favorite-item p, .favorite-item .description {
+            width: 90%;
+            font-size: 0.9em;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .favorite-item .description {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .favorite-item button {
+            background-color: #ffd700;
+            border: none;
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            width: 90%;
+            margin-top: auto; /* Ensure button stays at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-section">
+        <h1>OUR STORES</h1>
+        <button>NEAR YOU</button>
+    </div>
+    <div class="favorites-section">
+        <h2>Fabolous Cake</h2>
+        <div class="favorites-container">
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tPeNb1GWVNIa2oq4p8BPQPADyrlbBrPAQmCfmwpsBF7xiPyr" alt="Conti's Tiramisu">
+                <h3>CONTI'S TIRAMISU</h3>
+                <p>₱885.00</p>
+                <p class="description">Luscious layers of sponge cake and silky vanilla mousse dabbed with coffee & wine, finished off with cocoa powder</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXcJP033bJnI40VjbJmsPAgQHZc66fLdyGZO3zlzon7duVyOWx" alt="Mango Bravo">
+                <h3>MANGO BRAVO</h3>
+                <p>₱315.00 – ₱1,645.00</p>
+                <p class="description">Layers of crunchy wafers filled with chocolate mousse, cream and mango cubes</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJt87ISF33mlSF3L4lTHE-rrqzW7Gw5WvSCd9gSE5MCXP46QL" alt="Crema de Fruta">
+                <h3>CREMA DE FRUTA</h3>
+                <p>₱1,195.00</p>
+                <p class="description">A flowerfetti soft naked cake made with light and airy sponge cake & dreamy lemon crème with real fruits, topped with lychee flavored gelée.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBCknfm0wsTYRPOl79heRoVo0Ehe3jzp0G6laNlel4G1xcJUos" alt="Mango Tart">
+                <h3>MANGO TART</h3>
+                <p>₱825.00</p>
+                <p class="description">Ripe mangoes with vanilla cream on butter crust, topped with fresh ripe mango slices</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYY0g5POFOnbod_KzadUYNtVyMvf1Gh-V5HudWcKnatgKJnfrc" alt="Crinkle Cheesecake">
+                <h3>CRINKLE CHEESECAKE</h3>
+                <p>₱795.00</p>
+                <p class="description">Homemade fudgy crinkle cake, layered with cheesecake & textured with cookie brittles.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp01FS3IRCDduuPgySS_OBeL4KKo40LGNpfqlxZdm-jB55T9vh" alt="Blueberry Cheesecake">
+                <h3>BLUEBERRY CHEESECAKE</h3>
+                <p>₱345.00 – ₱765.00</p>
+                <p class="description">Our cheesecake on a crunchy graham crust is topped with juicy blueberries for a delightful flavor combination</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ2FG_eThSVF09HP-ayFXBnjMv56z1qmIq_l2q1OHRTMGJvkv" alt="Ube Custard">
+                <h3>UBE CUSTARD</h3>
+                <p>₱345.00 – ₱1,095.00</p>
+                <p class="description">Made with Ube sponge cake, real purple yam, and creamy custard layers</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbl5KrepI2B1wK1m9bPBiiJDDFFgI7H1iFFAs4ZeS5k-aP2Sp" alt="Classic Caramel">
+                <h3>CLASSIC CARAMEL</h3>
+                <p>₱995.00</p>
+                <p class="description">Light & pillowy-soft sponge cake paired with silky smooth caramel icing, topped off with white cream kisses and a delicious caramel drizzle.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi280e702-aIz1XXH2d6RmvkID5Dgky8zmtwgn8JZ0NSCL7v1c" alt="Almond Choco Sans Rival">
+                <h3>ALMOND CHOCO SANS RIVAL</h3>
+                <p>₱975.00</p>
+                <p class="description">Layers of thin wafers coated with choco butter icing topped with roasted almond sticks</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwXb8wbEUrapakNv6GLdzZ5iEDIrTnxWPtIEfIVH5gAbOxOCxI" alt="Sans Rival">
+                <h3>SANS RIVAL</h3>
+                <p>₱975.00</p>
+                <p class="description">Layers of chewy wafers filled with butter icing and cashew nuts</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="favorite-item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1pM0ynY195i4cRHcH-6zuwaHu3P1x8EKxLxKWHWluxy0CRIJE" alt="Strawberry Shortcake">
+                <h3>STRAWBERRY SHORTCAKE</h3>
+                <p>₱345.00 – ₱1,245.00</p>
+                <p class="description">Honey sponge cake with strawberry and vanilla cream, topped with sweet strawberries</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
