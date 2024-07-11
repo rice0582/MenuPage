@@ -71,7 +71,8 @@
       }
 
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f9f9f9;
@@ -120,6 +121,7 @@
         margin: 0 0 30px;
         font-size: 2em;
         color: #333;
+        font-weight: 900;
       }
       .favorites-container {
         display: flex;
@@ -162,8 +164,9 @@
         object-fit: cover;
       }
       .favorite-item h3 {
+        font-weight: 900;
         width: 90%;
-        font-size: 1.2em;
+        font-size: 1.5em;
         margin: 10px 0;
         text-align: center;
       }
@@ -174,11 +177,8 @@
         margin: 10px 0;
         text-align: center;
       }
-      .favorite-item .description {
-        font-family: "Times New Roman", Times, serif;
-      }
       .favorite-item button {
-        background-color: #ffd700;
+        background-color: #ffe8a3;
         border: none;
         padding: 10px;
         font-size: 1em;
@@ -186,6 +186,15 @@
         width: 90%;
         margin-top: auto; /* Ensure button stays at the bottom */
         margin-bottom: 20px;
+      }
+
+      .favorite-item button:hover {
+        transition-duration: 0.5s;
+        color: white;
+        background-color: #348946;
+      }
+      .pricing {
+        font-size: 1.3em;
       }
       .footer {
         background-color: #f4e3ae;
@@ -229,14 +238,6 @@
       .footer .column ul li a:hover {
         text-decoration: underline;
       }
-      video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -100;
-      }
     </style>
     <script>
       function confirmRedirect(event) {
@@ -269,16 +270,16 @@
             <span class="fs-4">Conti's Bakeshop & Restaurant </span>
             <ul class="nav nav-pills mt-3">
               <li class="nav-item">
-                <a href="Index.html" class="nav-link">Home</a>
+                <a href="Index.html" class="nav-link">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a href="About Us.html" class="nav-link">About us</a>
+                <a href="About Us.html" class="nav-link">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a href="Menu.html" class="nav-link">Menu</a>
+                <a href="Menu.html" class="nav-link">MENU</a>
               </li>
             </ul>
           </div>
@@ -302,13 +303,15 @@
             alt="Conti's Tiramisu"
           />
           <h3>CONTI'S TIRAMISU</h3>
-          <p>₱885.00</p>
+          <div class="pricing">
+            <p>₱885.00</p>
+          </div>
           <p class="description">
             Luscious layers of sponge cake and silky vanilla mousse dabbed with
             coffee & wine, finished off with cocoa powder
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -316,14 +319,17 @@
             src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXcJP033bJnI40VjbJmsPAgQHZc66fLdyGZO3zlzon7duVyOWx"
             alt="Mango Bravo"
           />
+
           <h3>MANGO BRAVO</h3>
-          <p>₱315.00 – ₱1,645.00</p>
+          <div class="pricing">
+            <p>₱1,645.00</p>
+          </div>
           <p class="description">
             Layers of crunchy wafers filled with chocolate mousse, cream and
             mango cubes
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -331,15 +337,18 @@
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJt87ISF33mlSF3L4lTHE-rrqzW7Gw5WvSCd9gSE5MCXP46QL"
             alt="Crema de Fruta"
           />
+
           <h3>CREMA DE FRUTA</h3>
-          <p>₱1,195.00</p>
+          <div class="pricing">
+            <p>₱1,195.00</p>
+          </div>
           <p class="description">
             A flowerfetti soft naked cake made with light and airy sponge cake &
             dreamy lemon crème with real fruits, topped with lychee flavored
             gelée.
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -348,13 +357,15 @@
             alt="Mango Tart"
           />
           <h3>MANGO TART</h3>
-          <p>₱825.00</p>
+          <div class="pricing">
+            <p>₱825.00</p>
+          </div>
           <p class="description">
             Ripe mangoes with vanilla cream on butter crust, topped with fresh
             ripe mango slices
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -363,13 +374,15 @@
             alt="Crinkle Cheesecake"
           />
           <h3>CRINKLE CHEESECAKE</h3>
-          <p>₱795.00</p>
+          <div class="pricing">
+            <p>₱795.00</p>
+          </div>
           <p class="description">
             Homemade fudgy crinkle cake, layered with cheesecake & textured with
             cookie brittles.
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -378,13 +391,15 @@
             alt="Blueberry Cheesecake"
           />
           <h3>BLUEBERRY CHEESECAKE</h3>
-          <p>₱345.00 – ₱765.00</p>
+          <div class="pricing">
+            <p>₱765.00</p>
+          </div>
           <p class="description">
             Our cheesecake on a crunchy graham crust is topped with juicy
             blueberries for a delightful flavor combination
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -393,13 +408,15 @@
             alt="Ube Custard"
           />
           <h3>UBE CUSTARD</h3>
-          <p>₱345.00 – ₱1,095.00</p>
+          <div class="pricing">
+            <p>₱1,095.00</p>
+          </div>
           <p class="description">
             Made with Ube sponge cake, real purple yam, and creamy custard
             layers
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -408,14 +425,16 @@
             alt="Classic Caramel"
           />
           <h3>CLASSIC CARAMEL</h3>
-          <p>₱995.00</p>
+          <div class="pricing">
+            <p>₱995.00</p>
+          </div>
           <p class="description">
             Light & pillowy-soft sponge cake paired with silky smooth caramel
             icing, topped off with white cream kisses and a delicious caramel
             drizzle.
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -424,13 +443,15 @@
             alt="Almond Choco Sans Rival"
           />
           <h3>ALMOND CHOCO SANS RIVAL</h3>
-          <p>₱975.00</p>
+          <div class="pricing">
+            <p>₱975.00</p>
+          </div>
           <p class="description">
             Layers of thin wafers coated with choco butter icing topped with
             roasted almond sticks
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -439,12 +460,14 @@
             alt="Sans Rival"
           />
           <h3>SANS RIVAL</h3>
-          <p>₱975.00</p>
+          <div class="pricing">
+            <p>₱975.00</p>
+          </div>
           <p class="description">
             Layers of chewy wafers filled with butter icing and cashew nuts
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
         <div class="favorite-item">
@@ -453,13 +476,15 @@
             alt="Strawberry Shortcake"
           />
           <h3>STRAWBERRY SHORTCAKE</h3>
-          <p>₱345.00 – ₱1,245.00</p>
+          <div class="pricing">
+            <p>₱1,245.00</p>
+          </div>
           <p class="description">
             Honey sponge cake with strawberry and vanilla cream, topped with
             sweet strawberries
           </p>
           <a href="javascript:alert('FOR EDUCATIONAL PURPOSES ONLY');">
-            <button>Add to Cart</button>
+            <button>ADD TO CART</button>
           </a>
         </div>
       </div>
