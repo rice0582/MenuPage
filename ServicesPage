@@ -184,7 +184,7 @@
         font-size: 1em;
         cursor: pointer;
         width: 90%;
-        margin-top: auto; /* Ensure button stays at the bottom */
+        margin-top: auto;
         margin-bottom: 20px;
       }
 
@@ -243,11 +243,10 @@
         font-weight: 900;
       }
 
-      .footer p{
+      .footer p {
         font-weight: 900;
         font-size: 15px;
       }
-      
     </style>
     <script>
       function confirmRedirect(event) {
