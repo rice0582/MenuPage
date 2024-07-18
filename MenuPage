@@ -276,19 +276,19 @@
               alt="Conti's Logo"
               class="img-fluid"
             />
-            <span class="fs-4">Conti's Bakeshop & Restaurant </span>
+            <span class="fs-4">CONTI'S BAKESHOP & RESTAURANT </span>
             <ul class="nav nav-pills mt-3">
               <li class="nav-item">
-                <a href="Index.html" class="nav-link">HOME</a>
+                <a href="index.html" class="nav-link">HOME</a>
               </li>
               <li class="nav-item">
-                <a href="Menu.html" class="nav-link">MENU</a>
+                <a href="menu.html" class="nav-link">MENU</a>
               </li>
               <li class="nav-item">
-                <a href="About Us.html" class="nav-link">ABOUT US</a>
+                <a href="about us.html" class="nav-link">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a href="Services.html" class="nav-link">SERVICES</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
               </li>
             </ul>
           </div>
@@ -300,7 +300,7 @@
       <a
         href="https://www.google.com/search?client=opera-gx&hs=xI9&sca_esv=551c7f8375920942&sca_upv=1&tbs=lf:1,lf_ui:4&tbm=lcl&q=google+maps+contis+locations&rflfq=1&num=10&sa=X&ved=2ahUKEwjY_r69gJ6HAxVG1zQHHVlyDQwQjGp6BAgdEAE&biw=1495&bih=794&dpr=1.25#rlfi=hd:;si:;mv:[[14.685597199999998,121.18476229999999],[14.5279222,120.9701174]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"
       >
-        <button>Click here</button>
+        <button>CLICK HERE</button>
       </a>
     </div>
     <div class="favorites-section">
@@ -504,19 +504,21 @@
           <div class="column">
             <h3>Contact Us</h3>
             <ul>
-              <li><a href="mailto: wecare@contis.ph">Email</a></li>
+              <li>
+                <a href="mailto: wecare@contis.ph">Email: wecare@contis.ph</a>
+              </li>
               <li>Phone No.: 8580-8888</li>
               <li>
                 <a
                   href=" https://www.facebook.com/contisph
                 "
                   target="_blank"
-                  >Facebook</a
-                >
+                  >Facebook: Conti's Bakeshop & Restaurant
+                </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/contis_ph" target="_blank"
-                  >Instagram</a
+                  >Instagram: Conti's Bakeshop & Restaurant</a
                 >
               </li>
             </ul>
